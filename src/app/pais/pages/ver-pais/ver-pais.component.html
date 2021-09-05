@@ -1,3 +1,8 @@
+
+<head>
+    <base href="pais/">
+</head>
+
 <div class="alert alert-info" *ngIf="!pais; else divPais">
     Espere por favor...
 </div>
@@ -39,15 +44,33 @@
 
     <div class="row animate__animated animate__fadeIn animate__faster">
         <h3>Traducciones</h3>
-        <div class="col">
-            <span class="badge bg-primary mr-1">{{pais.translations.es}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.fr}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.ja}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.it}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.pt}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.nl}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.hr}}</span>
-            <span class="badge bg-primary mr-1">{{pais.translations.fa}}</span>
+        <div class="col-3">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>ES: </strong><span class="badge bg-primary mr-1">{{pais.translations.es}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>FR: </strong><span class="badge bg-primary mr-1">{{pais.translations.fr}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>JA: </strong><span class="badge bg-primary mr-1">{{pais.translations.ja}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>IT: </strong><span class="badge bg-primary mr-1">{{pais.translations.it}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>PT: </strong><span class="badge bg-primary mr-1">{{pais.translations.pt}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>NL: </strong><span class="badge bg-primary mr-1">{{pais.translations.nl}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>HR: </strong><span class="badge bg-primary mr-1">{{pais.translations.hr}}</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>FA: </strong><span class="badge bg-primary mr-1">{{pais.translations.fa}}</span>
+                </li>
+            </ul>
         </div>
     </div>
 </ng-template>
